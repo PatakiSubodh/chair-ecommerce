@@ -58,15 +58,23 @@
     text-decoration: none;
     padding: 10px;
 }
-
+#login {
+    padding: 5px 20px;
+}
 #login:hover {
-    background-color: lawngreen;
+    /* background-color: lawngreen; */
+    border: 1px solid;
     border-radius: 5px;
 }
 
 #signup {
+    padding: 5px 20px;
     background-color: lawngreen;
     border-radius: 5px;
+    box-shadow: 3px 3px black;
+}
+#signup:hover {
+    box-shadow: none;
 }
 
 .container {
@@ -171,8 +179,8 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
+    background: rgb(124, 252, 0);
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 10px 0;
     font-size: 16px;
@@ -182,4 +190,15 @@
 
 .image-container:hover .overlay {
     opacity: 1;
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
