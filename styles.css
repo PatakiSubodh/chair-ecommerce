@@ -5,6 +5,17 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: black;
+    background: lawngreen;
+}
+
+::selection {
+    color: black;
+    background: lawngreen;
 }
 
 .navbar {
@@ -28,8 +39,18 @@
     text-transform: uppercase;
 }
 
+.comp-name a {
+    color: #000;
+    text-decoration: none;
+}
+
 #comp-fname {
-    font-weight: 800;
+    font-weight: 300;
+}
+
+#comp-lname {
+    font-weight: bolder;
+    color: lawngreen;
 }
 
 .navbar-items a {
@@ -37,6 +58,7 @@
     padding: 0 20px;
     color: #000;
     position: relative;
+    padding-bottom: 5px;
 }
 
 .navbar-items a::after {
@@ -44,7 +66,7 @@
     position: absolute;
     width: 0;
     height: 2px;
-    background-color: lawngreen;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(124,252,0,1) 100%);
     left: 0;
     bottom: 0;
     transition: width 0.3s ease-in-out;
@@ -197,8 +219,5 @@ footer {
     padding: 10px;
     text-align: center;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    bottom: 0;
-    left: 0;
     width: 100%;
 }
